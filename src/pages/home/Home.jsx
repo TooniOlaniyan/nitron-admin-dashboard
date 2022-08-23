@@ -5,7 +5,7 @@ import './home.scss'
 
 function Home() {
   return (
-    <div>
+    <div className='main-container'>
       <SideBar/>
       <NavBar/>
     </div>
