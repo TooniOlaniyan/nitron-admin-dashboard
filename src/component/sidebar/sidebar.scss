@@ -1,5 +1,5 @@
 .sidebarContainer{
-    border-right: 2px solid grey;
+    border-right: 1.5px solid rgba(128, 128, 128, 0.756);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -48,9 +48,10 @@
 }
 
 .header{
-    border-bottom: 2px solid gray;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.816);
     width: 100%;
     padding: 1rem;
+    color: #7451f8;
     span{
         font-size: 1.5rem;
         letter-spacing: 3px;

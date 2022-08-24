@@ -11,10 +11,10 @@ import {
   MdCallEnd,
   MdSettings,
   MdLogout,
+  MdOutlineSettingsSystemDaydream,
 } from 'react-icons/md'
 import {TbTruckDelivery} from 'react-icons/tb'
-import {FcStatistics} from 'react-icons/fc'
-import {GrDocumentCloud} from 'react-icons/gr'
+import { IoStatsChartSharp } from 'react-icons/io5'
 import {CgProfile} from 'react-icons/cg'
 
 function SideBar() {
@@ -37,8 +37,7 @@ function SideBar() {
             <AiOutlineUser className='icons' /> Users
           </li>
           <li>
-            <MdOutlineProductionQuantityLimits className='icons' />{' '}
-            Products
+            <MdOutlineProductionQuantityLimits className='icons' /> Products
           </li>
           <li>
             <AiOutlineCreditCard className='icons' /> Orders
@@ -52,7 +51,7 @@ function SideBar() {
         <p>Useful</p>
         <ul>
           <li>
-            <FcStatistics className='icons' /> Stats
+            <IoStatsChartSharp className='icons' /> Stats
           </li>
           <li>
             <MdNotificationsNone className='icons' /> Notification
@@ -63,7 +62,7 @@ function SideBar() {
         <p>Service</p>
         <ul>
           <li>
-            <GrDocumentCloud size={23} /> System Health
+            <MdOutlineSettingsSystemDaydream className='icons' /> System Health
           </li>
           <li>
             <MdCallEnd className='icons' /> Logs
