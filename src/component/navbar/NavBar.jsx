@@ -9,13 +9,22 @@ import {
   BiMessageRoundedDots,
   BiExitFullscreen,
 } from 'react-icons/bi'
+import image1 from '../../assets/image1.jpg'
 
 function NavBar() {
   return (
     <div className='navBar'>
       <div className='search'>
-        <input className='searchInput' type='search' name='search' id='search' placeholder='Search' />
-        <AiOutlineSearch className='icon'/>
+        <input
+          className='searchInput'
+          type='search'
+          name='search'
+          id='search'
+          placeholder='Search'
+        />
+        <div className='icon'>
+          <AiOutlineSearch size={20} />
+        </div>
       </div>
       <div className='navLinks'>
         <div className='english'>
@@ -40,7 +49,7 @@ function NavBar() {
           <BiListUl className='icons' />
         </div>
         <div className='image'>
-          <img src='' alt='' />
+          <img src={image1} alt='' />
         </div>
       </div>
     </div>
