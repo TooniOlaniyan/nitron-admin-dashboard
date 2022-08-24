@@ -24,9 +24,9 @@ function SideBar() {
         <span>Nitron</span>
       </div>
       <div className='dashboard'>
-        <p>Main</p>
+        <p className='main'>Main</p>
         <div>
-          <AiOutlineDashboard />
+          <AiOutlineDashboard size={23} fill='purple' />
           <p>Dashboard</p>
         </div>
       </div>
@@ -34,7 +34,7 @@ function SideBar() {
         <p>Lists</p>
         <ul>
           <li>
-            <AiOutlineUser size={23} fill='purple' /> users
+            <AiOutlineUser size={23} fill='purple' /> Users
           </li>
           <li>
             <MdOutlineProductionQuantityLimits size={23} fill='purple' />{' '}
@@ -63,7 +63,7 @@ function SideBar() {
         <p>Service</p>
         <ul>
           <li>
-            <GrDocumentCloud size={23} fill='purple' /> System Health
+            <GrDocumentCloud size={23} /> System Health
           </li>
           <li>
             <MdCallEnd size={23} fill='purple' /> Logs
