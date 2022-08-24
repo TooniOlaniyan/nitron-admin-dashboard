@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.scss'
 import {TiWorld} from 'react-icons/ti'
 import{CgMoon} from 'react-icons/cg'
+import { AiOutlineSearch } from 'react-icons/ai'
 import {
   BiBell,
   BiListUl,
@@ -13,7 +14,8 @@ function NavBar() {
   return (
     <div className='navBar'>
       <div className='search'>
-        <input type='search' name='search' id='search' />
+        <input className='searchInput' type='search' name='search' id='search' placeholder='Search' />
+        <AiOutlineSearch className='icon'/>
       </div>
       <div className='navLinks'>
         <div className='english'>

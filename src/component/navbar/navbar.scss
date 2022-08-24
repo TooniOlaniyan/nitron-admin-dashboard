@@ -46,3 +46,18 @@
         color: white;
     }
 }
+.search{
+    .searchInput{
+        position: relative;
+        background-color: red;
+        padding: 0.5rem;
+        border-radius: 10px;
+        &:focus{
+            outline-style: none;
+        }
+        .icon{
+            position: absolute;
+
+        }
+    }
+}
