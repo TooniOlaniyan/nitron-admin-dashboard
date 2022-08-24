@@ -12,23 +12,34 @@ import {
 function NavBar() {
   return (
     <div className='navBar'>
-      <div className="search">
-        <input type="search" name="search" id="search" />
+      <div className='search'>
+        <input type='search' name='search' id='search' />
       </div>
-      <div className="navLinks">
+      <div className='navLinks'>
         <div className='english'>
-          <TiWorld className='icons'/>
+          <TiWorld className='icons' />
           <p>English</p>
         </div>
-        <div><CgMoon className='icons'/></div>
-        <div><BiExitFullscreen className='icons'/></div>
-        <div><BiBell className='icons'/></div>
-        <div><BiMessageRoundedDots className='icons'/></div>
-        <div><BiListUl className='icons'/></div>
-        <div className='image'>
-          <img src="" alt="" />
+        <div>
+          <CgMoon className='icons' />
         </div>
-
+        <div>
+          <BiExitFullscreen className='icons' />
+        </div>
+        <div className='relative'>
+          <BiBell className='icons' />
+          <p className='absolute'>3</p>
+        </div>
+        <div className='relative'>
+          <BiMessageRoundedDots className='icons' />
+          <p className='absolute'>12</p>
+        </div>
+        <div>
+          <BiListUl className='icons' />
+        </div>
+        <div className='image'>
+          <img src='' alt='' />
+        </div>
       </div>
     </div>
   )

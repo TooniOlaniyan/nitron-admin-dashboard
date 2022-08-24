@@ -14,6 +14,9 @@
     align-items: center;
     gap: 1.5rem;
     cursor: pointer;
+    .relative{
+        position: relative;
+    }
     .icons{
         font-size: 23px;
         color: rgb(44, 42, 42);
@@ -26,5 +29,20 @@
         p{
             font-size: 14px;
         }
+    }
+    .absolute{
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -0.3rem;
+        right: -0.3rem;
+        background-color: red;
+        border-radius: 50%;
+        padding: 0.1rem;
+        font-size: 11px;
+        color: white;
     }
 }
