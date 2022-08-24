@@ -2,20 +2,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 0.7rem;
     flex: 6;
-    max-height: 4rem;
-    background-color: red;
+    max-height: 3.95rem;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.816);
+    
 }
 .navLinks{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    cursor: pointer;
+    .icons{
+        font-size: 23px;
+        color: rgb(44, 42, 42);
+    }
     .english{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0.1rem;
+        p{
+            font-size: 14px;
+        }
     }
 }
