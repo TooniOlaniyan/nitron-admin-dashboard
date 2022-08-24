@@ -26,7 +26,7 @@ function SideBar() {
       <div className='dashboard'>
         <p className='main'>Main</p>
         <div>
-          <AiOutlineDashboard size={23} fill='purple' />
+          <AiOutlineDashboard className='icons' />
           <p>Dashboard</p>
         </div>
       </div>
@@ -34,17 +34,17 @@ function SideBar() {
         <p>Lists</p>
         <ul>
           <li>
-            <AiOutlineUser size={23} fill='purple' /> Users
+            <AiOutlineUser className='icons' /> Users
           </li>
           <li>
-            <MdOutlineProductionQuantityLimits size={23} fill='purple' />{' '}
+            <MdOutlineProductionQuantityLimits className='icons' />{' '}
             Products
           </li>
           <li>
-            <AiOutlineCreditCard size={23} fill='purple' /> Orders
+            <AiOutlineCreditCard className='icons' /> Orders
           </li>
           <li>
-            <TbTruckDelivery size={23} fill='purple' /> Delivery
+            <TbTruckDelivery className='icons' /> Delivery
           </li>
         </ul>
       </div>
@@ -52,10 +52,10 @@ function SideBar() {
         <p>Useful</p>
         <ul>
           <li>
-            <FcStatistics size={23} fill='purple' /> Stats
+            <FcStatistics className='icons' /> Stats
           </li>
           <li>
-            <MdNotificationsNone size={23} fill='purple' /> Notification
+            <MdNotificationsNone className='icons' /> Notification
           </li>
         </ul>
       </div>
@@ -66,10 +66,10 @@ function SideBar() {
             <GrDocumentCloud size={23} /> System Health
           </li>
           <li>
-            <MdCallEnd size={23} fill='purple' /> Logs
+            <MdCallEnd className='icons' /> Logs
           </li>
           <li>
-            <MdSettings size={23} fill='purple' /> Settings
+            <MdSettings className='icons' /> Settings
           </li>
         </ul>
       </div>
@@ -77,10 +77,10 @@ function SideBar() {
         <p>User</p>
         <ul>
           <li>
-            <CgProfile size={23} fill='purple' /> Profile
+            <CgProfile className='icons' /> Profile
           </li>
           <li>
-            <MdLogout size={23} fill='purple' /> Logout
+            <MdLogout className='icons' /> Logout
           </li>
         </ul>
       </div>
