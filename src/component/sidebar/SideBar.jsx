@@ -1,46 +1,89 @@
 import React from 'react'
 import './sidebar.scss'
-import { AiOutlineDashboard, AiOutlineUser } from 'react-icons/ai'
+import {
+  AiOutlineDashboard,
+  AiOutlineUser,
+  AiOutlineCreditCard,
+} from 'react-icons/ai'
+import {
+  MdOutlineProductionQuantityLimits,
+  MdNotificationsNone,
+  MdCallEnd,
+  MdSettings,
+  MdLogout,
+} from 'react-icons/md'
+import {TbTruckDelivery} from 'react-icons/tb'
+import {FcStatistics} from 'react-icons/fc'
+import {GrDocumentCloud} from 'react-icons/gr'
+import {CgProfile} from 'react-icons/cg'
 
 function SideBar() {
   return (
     <div className='sidebarContainer'>
-      <div className='header'>Nitron</div>
-      <div>
-        <AiOutlineDashboard/>
-        <p>Dashboard</p>
+      <div className='header'>
+        <span>Nitron</span>
       </div>
-      <div>
+      <div className='dashboard'>
+        <p>Main</p>
+        <div>
+          <AiOutlineDashboard />
+          <p>Dashboard</p>
+        </div>
+      </div>
+      <div className='sections'>
         <p>Lists</p>
         <ul>
-          <li>users</li>
-          <li>Products</li>
-          <li>Orders</li>
-          <li>Delivery</li>
+          <li>
+            <AiOutlineUser /> users
+          </li>
+          <li>
+            <MdOutlineProductionQuantityLimits /> Products
+          </li>
+          <li>
+            <AiOutlineCreditCard /> Orders
+          </li>
+          <li>
+            <TbTruckDelivery /> Delivery
+          </li>
         </ul>
       </div>
-      <div>
+      <div className='sections'>
         <p>Useful</p>
         <ul>
-          <li>Stats</li>
-          <li>Notification</li>
+          <li>
+            <FcStatistics /> Stats
+          </li>
+          <li>
+            <MdNotificationsNone /> Notification
+          </li>
         </ul>
       </div>
-      <div>
+      <div className='sections'>
         <p>Service</p>
         <ul>
-          <li>System Health</li>
-          <li>Logs</li>
-          <li>Settings</li>
+          <li>
+            <GrDocumentCloud /> System Health
+          </li>
+          <li>
+            <MdCallEnd /> Logs
+          </li>
+          <li>
+            <MdSettings /> Settings
+          </li>
         </ul>
       </div>
-      <div>
+      <div className='sections'>
         <p>User</p>
         <ul>
-          <li>Profile</li>
-          <li>Logout</li>
+          <li>
+            <CgProfile /> Profile
+          </li>
+          <li>
+            <MdLogout /> Logout
+          </li>
         </ul>
       </div>
+      <div>color options</div>
     </div>
   )
 }
