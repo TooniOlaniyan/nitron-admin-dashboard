@@ -34,16 +34,17 @@ function SideBar() {
         <p>Lists</p>
         <ul>
           <li>
-            <AiOutlineUser /> users
+            <AiOutlineUser size={23} fill='purple' /> users
           </li>
           <li>
-            <MdOutlineProductionQuantityLimits /> Products
+            <MdOutlineProductionQuantityLimits size={23} fill='purple' />{' '}
+            Products
           </li>
           <li>
-            <AiOutlineCreditCard /> Orders
+            <AiOutlineCreditCard size={23} fill='purple' /> Orders
           </li>
           <li>
-            <TbTruckDelivery /> Delivery
+            <TbTruckDelivery size={23} fill='purple' /> Delivery
           </li>
         </ul>
       </div>
@@ -51,10 +52,10 @@ function SideBar() {
         <p>Useful</p>
         <ul>
           <li>
-            <FcStatistics /> Stats
+            <FcStatistics size={23} fill='purple' /> Stats
           </li>
           <li>
-            <MdNotificationsNone /> Notification
+            <MdNotificationsNone size={23} fill='purple' /> Notification
           </li>
         </ul>
       </div>
@@ -62,13 +63,13 @@ function SideBar() {
         <p>Service</p>
         <ul>
           <li>
-            <GrDocumentCloud /> System Health
+            <GrDocumentCloud size={23} fill='purple' /> System Health
           </li>
           <li>
-            <MdCallEnd /> Logs
+            <MdCallEnd size={23} fill='purple' /> Logs
           </li>
           <li>
-            <MdSettings /> Settings
+            <MdSettings size={23} fill='purple' /> Settings
           </li>
         </ul>
       </div>
@@ -76,10 +77,10 @@ function SideBar() {
         <p>User</p>
         <ul>
           <li>
-            <CgProfile /> Profile
+            <CgProfile size={23} fill='purple' /> Profile
           </li>
           <li>
-            <MdLogout /> Logout
+            <MdLogout size={23} fill='purple' /> Logout
           </li>
         </ul>
       </div>
