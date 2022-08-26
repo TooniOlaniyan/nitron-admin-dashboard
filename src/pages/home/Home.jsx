@@ -12,10 +12,10 @@ function Home() {
       <div className='mainContent'>
         <NavBar />
         <div className='widgets'>
-          <Widget/>
-          <Widget/>
-          <Widget/>
-          <Widget/>
+          <Widget name='Felix' valueDone='1,450' percentage='-10%' />
+          <Widget name='Bart' valueDone='10,450' percentage='60%' />
+          <Widget name='Tariola' valueDone='16,450' percentage='80%' />
+          <Widget name='chikal' valueDone='450' percentage='-70%' />
         </div>
       </div>
     </div>
