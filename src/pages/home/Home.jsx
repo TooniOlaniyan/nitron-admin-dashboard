@@ -1,8 +1,8 @@
 import React from 'react'
-import MainSection from '../../component/mainSection/MainSection'
 import NavBar from '../../component/navbar/NavBar'
 import SideBar from '../../component/sidebar/SideBar'
 import './home.scss'
+import Widget from '../../component/widget/Widget'
 
 function Home() {
   return (
@@ -11,7 +11,12 @@ function Home() {
 
       <div className='mainContent'>
         <NavBar />
-        <MainSection />
+        <div className='widgets'>
+          <Widget/>
+          <Widget/>
+          <Widget/>
+          <Widget/>
+        </div>
       </div>
     </div>
   )
