@@ -4,8 +4,10 @@
 }
 
 .mainContent{
-    display: flex;
     flex: 6;
-    flex-direction: column;
 
+    .widgets{
+        display: flex;
+        gap: 20px;
+    }
 }
