@@ -13,38 +13,59 @@ function Widget({type , percentage}) {
         title: 'USERS',
         isMoney: false,
         link: 'see all users',
-        icon: <FaUserAlt className='icon'/>
+        icon: <FaUserAlt className='icon' style={{color: 'crimson' ,backgroundColor: 'rgba(255, 0, 0 , 0.3)'}}/>
 
       }
       
       break;
     case 'order':
-      data= {
+      data = {
         title: 'ORDERS',
         isMoney: false,
         link: 'View all Orders',
-        icon: <FaShoppingCart className='icon'/>
-
+        icon: (
+          <FaShoppingCart
+            className='icon'
+            style={{
+              color: 'goldenrod',
+              backgroundColor: 'rgba(218, 165, 32 , 0.3)',
+            }}
+          />
+        ),
       }
       
       break;
     case 'earning':
-      data= {
+      data = {
         title: 'EARNING',
         isMoney: true,
         link: 'View Net Earnings',
-        icon: <FaDollarSign className='icon'/>
-
+        icon: (
+          <FaDollarSign
+            className='icon'
+            style={{
+              color: 'green',
+              backgroundColor: 'rgba(0, 128, 0 , 0.3)',
+            }}
+          />
+        ),
       }
       
       break;
     case 'balance':
-      data= {
+      data = {
         title: 'BALANCE',
         isMoney: true,
         link: 'View net Balance',
-        icon: <FaAcquisitionsIncorporated className='icon'/>
-
+        icon: (
+          <FaAcquisitionsIncorporated
+            className='icon'
+            style={{
+              color: 'purple',
+              backgroundColor: 'rgba(128, 0, 128 , 0.3)',
+            }}
+          />
+        ),
       }
       
       break;
