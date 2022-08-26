@@ -3,7 +3,7 @@ import './feature.scss'
 
 function Featured() {
   return (
-    <div>Featured</div>
+    <div className='featured'>Featured</div>
   )
 }
 

@@ -3,6 +3,8 @@ import NavBar from '../../component/navbar/NavBar'
 import SideBar from '../../component/sidebar/SideBar'
 import './home.scss'
 import Widget from '../../component/widget/Widget'
+import Chart from '../../component/chart/Chart'
+import Featured from '../../component/featured/Featured'
 
 function Home() {
   return (
@@ -18,7 +20,8 @@ function Home() {
           <Widget type='balance'  />
         </div>
         <div className="charts">
-          
+          <Featured/>
+          <Chart/>
         </div>
       </div>
     </div>
