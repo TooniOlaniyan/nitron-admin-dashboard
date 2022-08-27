@@ -62,8 +62,8 @@ function TableData() {
       ),
     ]
   return (
-    <div className='tableContainer'>
-      <TableContainer component={Paper}>
+    <div >
+      <TableContainer  component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label='simple table'>
           <TableHead>
             <TableRow>
@@ -79,7 +79,7 @@ function TableData() {
           <TableBody>
             {rows.map((row) => (
               <TableRow
-                key={row.name}
+                key={row.id}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell align='center' component='th' scope='row'>
