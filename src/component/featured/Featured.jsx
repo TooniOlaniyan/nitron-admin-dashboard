@@ -24,8 +24,8 @@ function Featured() {
       <div className="stats">
         <div className="targets">
           <p>Target</p>
-          <p>Target</p>
-          <p>Target</p>
+          <p>Last Week</p>
+          <p>Last Month</p>
         </div>
         <div className='value'>
           <p className='positive'> <RiArrowDownSLine className='icon'  /> $141k  </p>
