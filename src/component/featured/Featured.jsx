@@ -13,7 +13,7 @@ function Featured() {
         <BsThreeDotsVertical/>
       </div>
       <div className='barWrapper'>
-        <CircularProgressbar value={30} text='30%'/>
+        <CircularProgressbar value={30} text='30%' strokeWidth={5}/>
       </div>
       <div className="text">
         <p className='sale'>Total sales made today</p>
