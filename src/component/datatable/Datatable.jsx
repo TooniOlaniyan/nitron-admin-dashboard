@@ -10,11 +10,11 @@ import { DataGrid } from '@mui/x-data-grid'
 function Datatable() {
   return (
     <div className='dataTable'>
-      <div style={{ height: 600, width: '100%' }}>
+      <div style={{ height: 650, width: '100%' }}>
         <DataGrid
           rows={userRows}
           columns={userColumns}
-          pageSize={5}
+          pageSize={10}
           rowsPerPageOptions={[5]}
           checkboxSelection
         />
