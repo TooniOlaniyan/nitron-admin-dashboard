@@ -1,0 +1,53 @@
+.app.dark{
+    background-color: #111;
+    color: rgb(156, 156, 156);
+   .widget{
+    background-color: #111;
+   }
+    .table{
+        background-color: #111;
+        .tableCell{
+            color: gray;
+        }
+    }
+    .navBar{
+        color:#999;
+        border-color: #333;
+        .icons{
+            color: #999;
+        }
+        
+    }
+    .sidebarContainer{
+        background-color: #111;
+        border-right: 1.5px solid #333;
+        .header{
+            border-bottom: 1.5px solid #333;
+            color: #333;
+           
+
+        }
+        .dashboard{
+            div{
+                &:hover{
+                     background-color: #333;
+                }
+            }
+        }
+        li{
+            &:hover{
+                background-color: #333;
+            }
+        }
+        .icons{
+            color: #999;
+        }
+    }
+    .featured{
+        .text{
+            .price{
+                color: #333;
+            }
+        }
+    }
+}

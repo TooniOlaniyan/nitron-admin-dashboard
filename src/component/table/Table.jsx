@@ -62,18 +62,30 @@ function TableData() {
       ),
     ]
   return (
-    <div >
-      <TableContainer  component={Paper}>
+    <div>
+      <TableContainer className='table' component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label='simple table'>
           <TableHead>
             <TableRow>
-              <TableCell align='center'>Tracking Id</TableCell>
-              <TableCell align='center' className='tableCell'>Customer</TableCell>
-              <TableCell align='center' className='tableCell'>Data</TableCell>
-              <TableCell align='center' className='tableCell'>Product</TableCell>
-              <TableCell align='center' className='tableCell'>Amount</TableCell>
-              <TableCell align='center' className='tableCell'>Payment Method</TableCell>
-              <TableCell align='center' className='tableCell'>Status</TableCell>
+              <TableCell className='tableCell' align='center'>Tracking Id</TableCell>
+              <TableCell align='center' className='tableCell'>
+                Customer
+              </TableCell>
+              <TableCell align='center' className='tableCell'>
+                Data
+              </TableCell>
+              <TableCell align='center' className='tableCell'>
+                Product
+              </TableCell>
+              <TableCell align='center' className='tableCell'>
+                Amount
+              </TableCell>
+              <TableCell align='center' className='tableCell'>
+                Payment Method
+              </TableCell>
+              <TableCell align='center' className='tableCell'>
+                Status
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -82,15 +94,20 @@ function TableData() {
                 key={row.id}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
-                <TableCell align='center' component='th' scope='row'>
+                <TableCell className='tableCell' align='center' component='th' scope='row'>
                   {row.id}
                 </TableCell>
-                <TableCell align='center'>{row.Product}</TableCell>
-                <TableCell align='center'>{row.customer}</TableCell>
-                <TableCell align='center'>{row.data}</TableCell>
-                <TableCell align='center'>{row.amount}</TableCell>
-                <TableCell align='center'>{row.paymentMethod}</TableCell>
-                <TableCell className={row.status === 'confirmed' ? 'success' : 'delay'} align='center'>{row.status}</TableCell>
+                <TableCell className='tableCell' align='center'>{row.Product}</TableCell>
+                <TableCell className='tableCell' align='center'>{row.customer}</TableCell>
+                <TableCell className='tableCell' align='center'>{row.data}</TableCell>
+                <TableCell className='tableCell' align='center'>{row.amount}</TableCell>
+                <TableCell className='tableCell' align='center'>{row.paymentMethod}</TableCell>
+                <TableCell
+                  className={row.status === 'confirmed' ? 'success' : 'delay'}
+                  align='center'
+                >
+                  {row.status}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

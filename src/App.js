@@ -5,9 +5,10 @@ import LogIn from './pages/login/LogIn';
 import List from './pages/list/List';
 import Single from './pages/single/Single';
 import New from './pages/new/New';
+import './styles/dark.scss'
 function App() {
   return (
-    <div>
+    <div className='app dark'>
       <Router>
         <Routes>
           <Route path='/' >
