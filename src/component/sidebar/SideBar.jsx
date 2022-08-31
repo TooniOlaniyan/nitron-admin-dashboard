@@ -16,6 +16,7 @@ import {
 import {TbTruckDelivery} from 'react-icons/tb'
 import { IoStatsChartSharp } from 'react-icons/io5'
 import {CgProfile} from 'react-icons/cg'
+import {Link} from 'react-router-dom'
 
 function SideBar() {
   return (
@@ -27,15 +28,20 @@ function SideBar() {
         <p className='main'>Main</p>
         <div>
           <AiOutlineDashboard className='icons' />
-          <p>Dashboard</p>
+          <Link to='/' style={{ textDecoration: 'none' }}>
+            <p>Dashboard</p>
+          </Link>
         </div>
       </div>
       <div className='sections'>
         <p>Lists</p>
         <ul>
           <li>
-            <AiOutlineUser className='icons' /> Users
+            <Link to='/users' style={{ textDecoration: 'none' , color:'gray' }}>
+              <AiOutlineUser className='icons' /> Users
+            </Link>
           </li>
+
           <li>
             <MdOutlineProductionQuantityLimits className='icons' /> Products
           </li>
@@ -84,8 +90,8 @@ function SideBar() {
         </ul>
       </div>
       <div className='colorOptions'>
-       <div className="colorLight"></div>
-       <div className="colorDark"></div>
+        <div className='colorLight'></div>
+        <div className='colorDark'></div>
       </div>
     </div>
   )
