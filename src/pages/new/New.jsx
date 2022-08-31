@@ -1,8 +1,18 @@
 import React from 'react'
+import NavBar from '../../component/navbar/NavBar'
+import SideBar from '../../component/sidebar/SideBar'
+import './new.scss'
 
 function New() {
   return (
-    <div>New</div>
+    <div className='new'>
+      <SideBar/>
+      <div className="newContainer">
+        <NavBar/>
+        Test
+
+      </div>
+    </div>
   )
 }
 
