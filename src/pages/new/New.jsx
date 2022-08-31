@@ -5,7 +5,7 @@ import {FaUpload} from 'react-icons/fa'
 import './new.scss'
 
 function New() {
-  const {file , setFile} = useState('')
+  const [file , setFile] = useState('')
   console.log(file)
   const handleChange  = (e) => {
     setFile(e.target.files[0])

@@ -27,6 +27,7 @@ function Datatable() {
     <div className='dataTable'>
       <div style={{ height: 650, width: '100%' }}>
         <DataGrid
+        className='datagrid'
           rows={userRows}
           columns={userColumns.concat(action)}
           pageSize={10}
