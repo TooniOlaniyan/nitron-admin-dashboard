@@ -41,7 +41,7 @@ export const userRows = [
   },
   {
     id: 2,
-    username: 'said',
+    username: 'Said',
     img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=461&q=80',
     status: 'active',
     email: 'said@gmail.com',
@@ -65,7 +65,7 @@ export const userRows = [
   },
   {
     id: 5,
-    username: 'paul',
+    username: 'Paul',
     img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=461&q=80',
     status: 'active',
     email: 'paul@gmail.com',
