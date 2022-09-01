@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './sidebar.scss'
 import {
   AiOutlineDashboard,
@@ -17,8 +17,10 @@ import {TbTruckDelivery} from 'react-icons/tb'
 import { IoStatsChartSharp } from 'react-icons/io5'
 import {CgProfile} from 'react-icons/cg'
 import {Link} from 'react-router-dom'
+import {DarkModeContext} from '../../context/DarkModeContext'
 
 function SideBar() {
+  const {dispatch} = useContext(DarkModeContext)
   return (
     <div className='sidebarContainer'>
       <div className='header'>
@@ -37,7 +39,7 @@ function SideBar() {
         <p>Lists</p>
         <ul>
           <li>
-            <Link to='/users' style={{ textDecoration: 'none' , color:'gray' }}>
+            <Link to='/users' style={{ textDecoration: 'none', color: 'gray' }}>
               <AiOutlineUser className='icons' /> Users
             </Link>
           </li>
@@ -90,8 +92,14 @@ function SideBar() {
         </ul>
       </div>
       <div className='colorOptions'>
-        <div className='colorLight'></div>
-        <div className='colorDark'></div>
+        <div
+          onClick={() => dispatch({ type: 'LIGHT' })}
+          className='colorLight'
+        ></div>
+        <div
+          onClick={() => dispatch({ type: 'DARK' })}
+          className='colorDark'
+        ></div>
       </div>
     </div>
   )

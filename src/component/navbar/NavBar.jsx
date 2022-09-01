@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './navbar.scss'
 import {TiWorld} from 'react-icons/ti'
 import{CgMoon} from 'react-icons/cg'
@@ -10,8 +10,10 @@ import {
   BiExitFullscreen,
 } from 'react-icons/bi'
 import image1 from '../../assets/image1.jpg'
+import { DarkModeContext } from '../../context/DarkModeContext'
 
 function NavBar() {
+  const {dispatch} = useContext(DarkModeContext)
   return (
     <div className='navBar'>
       <div className='search'>
@@ -32,7 +34,7 @@ function NavBar() {
           <p>English</p>
         </div>
         <div>
-          <CgMoon className='icons' />
+          <CgMoon onClick={() => dispatch({type: 'TOGGLE'})} className='icons' />
         </div>
         <div>
           <BiExitFullscreen className='icons' />
